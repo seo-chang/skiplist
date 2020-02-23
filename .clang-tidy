@@ -6,7 +6,7 @@
 #
 ---
 # See https://clang.llvm.org/extra/clang-tidy/#using-clang-tidy for all possible checks
-Checks: '*,-fuchsia-*,-cppcoreguidelines-pro-bounds-array-to-pointer-decay,-cppcoreguidelines-pro-bounds-constant-array-index,-google-runtime-references,-google-readability-braces-around-statements,-google-build-using-namespace,-readability-braces-around-statements,-hicpp-no-array-decay,-modernize-use-trailing-return-type,-hicpp-braces-around-statements,-cppcoreguidelines-pro-bounds-pointer-arithmetic,-llvm-header-guard,-google-global-names-in-headers,-cppcoreguidelines-special-member-functions,-hicpp-special-member-functions,-cppcoreguidelines-owning-memory'
+Checks: '*,-fuchsia-*,-cert-msc30-c,-cert-msc50-cpp,-cppcoreguidelines-pro-bounds-array-to-pointer-decay,-cppcoreguidelines-pro-bounds-constant-array-index,-google-runtime-references,-google-readability-braces-around-statements,-google-build-using-namespace,-readability-braces-around-statements,-hicpp-no-array-decay,-modernize-use-trailing-return-type,-hicpp-braces-around-statements,-cppcoreguidelines-pro-bounds-pointer-arithmetic,-llvm-header-guard,-google-global-names-in-headers,-cppcoreguidelines-special-member-functions,-hicpp-special-member-functions,-cppcoreguidelines-owning-memory'
 
 HeaderFilterRegex: '.*'
 

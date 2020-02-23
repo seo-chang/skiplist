@@ -13,13 +13,17 @@ int totalTests = 0;
 
 template <typename T> string isOK(const T& got, const T& expected) {
     ++totalTests;
+    string result;
+
     if (got == expected) {
         ++totalPassed;
-        return "OK: ";
+        result = "OK: ";
     } else {
         cout << "    Got   " << got << "\n expected " << expected << endl;
-        return "ERR: ";
+        result = "ERR: ";
     }
+
+    return result;
 }
 
 void test02() {
