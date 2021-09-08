@@ -1,5 +1,5 @@
 /**
- * Created by <Name> on <Date>.
+ * Created by <Robin Seo> on <14 Feb 2020>.
  *
  * SkipList https://en.wikipedia.org/wiki/Skip_list
  *
@@ -48,15 +48,15 @@ class SkipList {
     // defined in .cpp as SkipList::SNode::SNode(int data) ...
     struct SNode {
         explicit SNode(int data);
-        int data;
+        int Data;
         // link to Next SNode
-        SNode* next;
+        SNode* Next;
         // link to Prev SNode
-        SNode* prev;
+        SNode* Prev;
         // link to up one level
-        SNode* upLevel;
+        SNode* UpLevel;
         // link to down one level
-        SNode* downLevel;
+        SNode* DownLevel;
     };
 
     // Depth of SkipList
@@ -69,9 +69,11 @@ class SkipList {
     SNode** rearGuards;
 
     // given a SNode, place it before the given NextNode
-    void addBefore(SNode* newNode, SNode* nextNode);
+    static void addBefore(SNode* newNode, SNode* nextNode);
 
     // return true 50% of time,
     // each node has a 50% chance of being at higher level
     bool alsoHigher() const;
+
+
 };
